@@ -4,7 +4,7 @@ Install_lnmp_v1.sh
   
 Install_lnmp_v3.sh   
   首次编辑时间：2018-07-11 
-  脚本说明：sh Install_lnmp_v2.sh  改进版，建议使用这个 
+  脚本说明：sh Install_lnmp_v3.sh  改进版，建议使用这个 
   
 get_comment.sh 
   首次编辑时间：2018-07-25
