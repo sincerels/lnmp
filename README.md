@@ -1,3 +1,7 @@
-install_lnmp_v1.sh is INSTALL lnmp ,you can install php , nginx , mysql ,In The File Download，please input 1 ,2 , 3, 4 . 
-get_comment.sh is acquire <我不是药神> Film reviews, satisfaction, and users. 
-Specific operatio please download file 
+Install_lnmp_v1.sh   
+  首次编辑时间：2018-07-11 
+  脚本说明：sh Install_lnmp_v1.sh  根据脚本提示执行想要安装的程序，nginx+php+mysql  
+  
+get_comment.sh 
+  首次编辑时间：2018-07-25
+  脚本说明：该脚本爬取电影《我不是药神》的影评，并进行记录。
