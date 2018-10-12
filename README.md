@@ -2,7 +2,7 @@ Install_lnmp_v1.sh
   首次编辑时间：2018-07-11 
   脚本说明：sh Install_lnmp_v1.sh  根据脚本提示执行想要安装的程序，nginx+php+mysql 
   
-Install_lnmp_v2.sh   
+Install_lnmp_v3.sh   
   首次编辑时间：2018-07-11 
   脚本说明：sh Install_lnmp_v2.sh  改进版，建议使用这个 
   
