@@ -88,19 +88,21 @@ done
 
 PHP(){
 echo -e "\033[32m ************Install  php********  \033[0m"
-VER=`cat /etc/redhat-release |awk '{print $3}'`
-VER7=7
+VER=`cat /etc/redhat-release|sed -r 's/.* ([0-9]+)\..*/\1/'`
+
 
 timeout 10s ping -c4 -w4 www.baidu.com   &>/dev/null
 if [ $? -eq 0 ];then
-	if [ `echo "$VER < $VER7"|bc`  -lt 7 ];then
+	if [  $VER -eq "6"  ];then
  		yum -y remove php-common 
  		rpm -Uvh http://download.Fedoraproject.org/pub/epel/6/x86_64/epel-release-6-8.noarch.rpm
  		rpm -Uvh http://rpms.famillecollet.com/enterprise/remi-release-6.rpm
  		yum clean && yum repolist 
  		yum -y install --enablerepo=remi,remi-php56 php php-opcache php-pecl-apcu php-devel php-mbstring php-mcrypt php-mysqlnd php-phpunit-PHPUnit php-pecl-xdebug php-pecl-xhprof php-pdo php-pear php-fpm php-cli php-xml php-bcmath php-process php-gd php-common
  		php -v
+		php-fpm
     	else 
+		yum -y remove php-common
         	rpm -Uvh http://ftp.iij.ad.jp/pub/linux/fedora/epel/7/x86_64/e/epel-release-7-5.noarch.rpm 
         	rpm -Uvh http://rpms.famillecollet.com/enterprise/remi-release-7.rpm
          	yum clean && yum repolist 
