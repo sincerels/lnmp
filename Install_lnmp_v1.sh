@@ -290,7 +290,7 @@ fi
 MYSQL
  ;;
 *)
- echo "plses input 1 2 3 4 "
+ echo "please input 1 2 3 4 "
  ;;
 esac
 
